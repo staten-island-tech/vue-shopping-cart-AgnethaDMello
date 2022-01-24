@@ -30,4 +30,7 @@ li {
 a {
   color: #42b983;
 }
+p {
+  color: blueviolet;
+}
 </style>

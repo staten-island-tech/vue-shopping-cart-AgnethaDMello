@@ -17,6 +17,10 @@
   color: #2c3e50;
 }
 
+p {
+  color: blueviolet;
+}
+
 #nav {
   padding: 30px;
 }

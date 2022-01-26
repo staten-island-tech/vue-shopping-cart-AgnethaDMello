@@ -1,6 +1,11 @@
 <template>
   <div class="home">
     <HelloWorld msg="cart for shopping" />
+    <p v-if="alive">{{ pet }}</p>
+    <p v-else>rest in pieces</p>
+    <ul>
+      <li c-for="feature in features" :key="feature"></li>
+    </ul>
   </div>
 </template>
 
@@ -12,6 +17,18 @@ export default {
   name: "Home",
   components: {
     HelloWorld,
+  },
+  data() {
+    return {
+      pet: "rogi the dogi",
+      alive: true,
+      features: [
+        "white fur",
+        "golden brown features",
+        "black whiskers/eyelashes",
+        "white whiskers/eyelashes",
+      ],
+    };
   },
 };
 </script>

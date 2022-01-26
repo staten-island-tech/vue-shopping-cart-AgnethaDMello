@@ -1,5 +1,6 @@
 <template>
   <div class="about">
-    <h1>This is an about page</h1>
+    <h1>when they always say "yeehaw" but never ask "haw yee" :(</h1>
+    <p>so sad, heart broken</p>
   </div>
 </template>

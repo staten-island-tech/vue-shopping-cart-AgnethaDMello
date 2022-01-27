@@ -4,7 +4,7 @@
     <p v-if="alive">{{ pet }}</p>
     <p v-else>rest in pieces</p>
     <ul>
-      <li c-for="feature in features" :key="feature"></li>
+      <li v-for="feature in features" :key="feature">{{ feature }}</li>
     </ul>
   </div>
 </template>

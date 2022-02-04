@@ -12,6 +12,15 @@
     <label for="bird">bird</label>
     <br />
     <span>Checked Animals: {{ check }}</span>
+    <div>
+      <select v-model="selected">
+        <option>annie</option>
+        <option>yinglin</option>
+        <option>iris</option>
+        <option>elizabeth</option>
+      </select>
+      <span>{{ selected }}</span>
+    </div>
   </div>
 </template>
 
@@ -23,6 +32,7 @@ export default {
     return {
       message: "",
       check: [],
+      selected: "",
     };
   },
 };

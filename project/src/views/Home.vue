@@ -1,5 +1,6 @@
 <template>
   <div class="home">
+    <h2>{{ now }}</h2>
     <HelloWorld msg="cart for shopping" />
     <p v-if="alive">{{ pet }}</p>
     <p v-else>rest in pieces</p>
@@ -29,6 +30,12 @@ export default {
         "white whiskers/eyelashes",
       ],
     };
+  },
+  computed: {
+    now: function () {
+      const time = new Date();
+      return `${time.getHours()}:${time.getMinutes()}`;
+    },
   },
 };
 </script>

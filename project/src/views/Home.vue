@@ -7,6 +7,9 @@
     <ul>
       <li v-for="feature in features" :key="feature">{{ feature }}</li>
     </ul>
+    <Card class="card" title="oo la la" />
+    <Card class="card" title="00 la la" />
+    <Card class="card" title="oo l@ l@" />
   </div>
 </template>
 
@@ -44,5 +47,10 @@ export default {
 <style>
 h1 {
   color: rgb(0, 98, 255);
+}
+.card {
+  width: 10rem;
+  height: 10rem;
+  background-color: magenta;
 }
 </style>

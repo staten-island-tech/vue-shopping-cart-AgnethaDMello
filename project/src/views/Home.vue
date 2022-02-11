@@ -7,9 +7,24 @@
     <ul>
       <li v-for="feature in features" :key="feature">{{ feature }}</li>
     </ul>
-    <Card class="card" title="oo la la" />
-    <Card class="card" title="00 la la" />
-    <Card class="card" title="oo l@ l@" />
+    <Card
+      class="card"
+      title="oo la la"
+      description="hehe"
+      image="https://bit.ly/3uFl6K5"
+    />
+    <Card
+      class="card"
+      title="00 la la"
+      description="haha"
+      image="https://bit.ly/3uKF5qU"
+    />
+    <Card
+      class="card"
+      title="oo l@ l@"
+      description="hoho"
+      image="https://bit.ly/3HMNRIi"
+    />
   </div>
 </template>
 
@@ -51,6 +66,10 @@ h1 {
 .card {
   width: 10rem;
   height: 10rem;
-  background-color: magenta;
+  background-color: rgb(79, 146, 197);
+}
+.image {
+  width: 3rem;
+  height: 3rem;
 }
 </style>

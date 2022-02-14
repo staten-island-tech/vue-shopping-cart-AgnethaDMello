@@ -3,10 +3,7 @@
     <h2>{{ title }}</h2>
     <img v-bind:src="image" class="image" alt="" />
     <p>${{ price }}</p>
-    <div>
-      <button v-on:click="caart">Add to Cart!</button>
-      <button class="remove" v-on:click="nocaart">Remove!</button>
-    </div>
+    <button>Add to Cart!</button>
   </div>
 </template>
 
@@ -19,13 +16,13 @@ export default {
     image: String,
     id: Number,
   },
-  data() {
+  /*   data() {
     return {
       total: null,
       cart: [],
     };
   },
-  methods: {
+   methods: {
     caart: function () {
       this.total += this.price;
       document.querySelector("#totalprice").textContent = this.total;
@@ -36,12 +33,6 @@ export default {
           `<p class="yo">${this.title}  ~  $${this.price}</p>`
         );
     },
-    nocaart: function () {
-      const el = document.querySelector(".yo");
-      el.remove();
-      this.total -= this.price;
-      document.querySelector("#totalprice").textContent = this.total;
-    },
-  },
+  }, */
 };
 </script>

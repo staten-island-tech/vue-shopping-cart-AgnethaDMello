@@ -14,6 +14,7 @@
         :title="item.name"
         :image="item.img"
         :price="item.price"
+        @click="shop"
       >
       </Card>
     </div>
@@ -185,7 +186,9 @@ export default {
       ],
     };
   },
-  methods: {},
+  methods: {
+    shop: function () {},
+  },
 };
 </script>
 

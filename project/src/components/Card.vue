@@ -2,7 +2,8 @@
   <div>
     <h2>{{ title }}</h2>
     <img v-bind:src="image" class="image" alt="" />
-    <p>{{ description }}</p>
+    <p>${{ price }}</p>
+    <button>Add to Cart!</button>
   </div>
 </template>
 
@@ -11,7 +12,7 @@ export default {
   name: "Card",
   props: {
     title: String,
-    description: String,
+    price: Number,
     image: String,
   },
 };

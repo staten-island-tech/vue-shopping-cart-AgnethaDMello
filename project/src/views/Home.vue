@@ -1,5 +1,6 @@
 <template>
   <div class="home">
+    <div class="e"></div>
     <Card
       class="card"
       v-for="item in items"
@@ -152,12 +153,12 @@ export default {
       ],
     };
   },
+  methods: {},
 };
 </script>
 
 <style>
 .card {
-  margin-top: 2rem;
   width: 21rem;
   height: 23rem;
   background-color: rgb(79, 146, 197);

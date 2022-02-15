@@ -3,7 +3,7 @@
     <h2>{{ title }}</h2>
     <img v-bind:src="image" class="image" alt="" />
     <p>${{ price }}</p>
-    <button>Add to Cart!</button>
+    <button @click="$emit('add-click')">Add to Cart!</button>
   </div>
 </template>
 
@@ -27,7 +27,7 @@ export default {
       this.total += this.price;
       document.querySelector("#totalprice").textContent = this.total;
       document
-        .querySelector(".arts")
+        .querySelector(".list")
         .insertAdjacentHTML(
           `afterbegin`,
           `<p class="yo">${this.title}  ~  $${this.price}</p>`

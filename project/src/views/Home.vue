@@ -2,7 +2,7 @@
   <div class="home">
     <div class="cart">
       <h2 class="urcart">Your Cart!</h2>
-      <p class="arts"></p>
+      <p class="list"></p>
       <h3 id="totalprice"></h3>
     </div>
     <div class="cards">
@@ -14,7 +14,7 @@
         :title="item.name"
         :image="item.img"
         :price="item.price"
-        @click="shop"
+        @add-click="shop"
       >
       </Card>
     </div>
@@ -32,6 +32,8 @@ export default {
   },
   data() {
     return {
+      total: null,
+      cart: [],
       items: [
         {
           name: "Sandcastle Panda Sticker",
@@ -187,7 +189,16 @@ export default {
     };
   },
   methods: {
-    shop: function () {},
+    shop: function () {
+      /*         console.log(item.name); */
+      /*       return `${this.items}`; 
+       document
+        .querySelector(".list")
+        .insertAdjacentHTML(
+          `afterbegin`,
+          `<p class="yo">${this.items.name}  ~  $${this.items.price}</p>`
+        ); */
+    },
   },
 };
 </script>
